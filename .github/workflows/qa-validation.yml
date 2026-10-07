@@ -1,0 +1,50 @@
+name: QA Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-qa-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required QA artifacts
+        shell: bash
+        run: |
+          set -e
+          required=(
+            "README.md"
+            "TESTING_GUIDE.md"
+            "Test_Plan.xlsx"
+            "Test_Scenarios.xlsx"
+            "Test_Cases.xlsx"
+            "Bug_Report.xlsx"
+            "Test_Summary_Report.xlsx"
+            "Test_Traceability_Matrix.csv"
+            "Regression_Test_Suite.csv"
+            "QA_Test_Data.csv"
+          )
+          for file in "${required[@]}"; do
+            test -f "$file" || { echo "Missing required artifact: $file"; exit 1; }
+          done
+
+      - name: Validate CSV structure
+        shell: bash
+        run: |
+          set -e
+          for file in Test_Traceability_Matrix.csv Regression_Test_Suite.csv QA_Test_Data.csv; do
+            test "$(wc -l < "$file")" -gt 1
+            test "$(head -n 1 "$file" | tr -cd ',' | wc -c)" -gt 0
+          done
+
+      - name: QA asset summary
+        run: |
+          echo "QA repository validation completed."
+          echo "Traceability rows: $(($(wc -l < Test_Traceability_Matrix.csv)-1))"
+          echo "Regression tests: $(($(wc -l < Regression_Test_Suite.csv)-1))"
+          echo "Test data records: $(($(wc -l < QA_Test_Data.csv)-1))"

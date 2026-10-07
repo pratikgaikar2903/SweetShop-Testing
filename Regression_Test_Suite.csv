@@ -1,0 +1,19 @@
+Test_ID,Area,Test,Priority,Type
+REG-001,Navigation,Application opens and primary navigation works,P0,Smoke
+REG-002,Catalogue,Products load with valid names/prices/images,P0,Smoke
+REG-003,Product,Product detail opens from catalogue,P1,Functional
+REG-004,Search,Exact and partial product searches return relevant results,P1,Functional
+REG-005,Search,No-result search displays a useful empty state,P1,Negative
+REG-006,Auth,Valid login succeeds,P0,Smoke
+REG-007,Auth,Invalid login is rejected with safe feedback,P0,Negative
+REG-008,Cart,Product can be added to cart,P0,Smoke
+REG-009,Cart,Quantity increase/decrease updates totals,P0,Functional
+REG-010,Cart,Remove item updates cart correctly,P0,Functional
+REG-011,Cart,Invalid quantity cannot create invalid state,P0,Boundary
+REG-012,Checkout,Required fields are validated,P0,Negative
+REG-013,Checkout,Valid checkout reaches confirmation,P0,Smoke
+REG-014,Checkout,Refresh/back navigation does not corrupt order state,P1,State
+REG-015,Errors,Recoverable application errors show actionable feedback,P1,Negative
+REG-016,Responsive,Core journey works on mobile viewport,P1,Usability
+REG-017,Accessibility,Keyboard navigation reaches core controls,P2,Accessibility
+REG-018,Security,Unexpected/special input is safely handled,P1,Security

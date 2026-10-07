@@ -1,0 +1,11 @@
+Metric,Definition,Formula,Target
+Total Test Cases,Number of executable cases,Count of Test_Case_ID,>40
+Executed,Number actually executed,Count executed cases,100% before release
+Passed,Tests meeting expected result,Count Passed,>=95% overall
+Failed,Tests not meeting expected result,Count Failed,0 P0 critical failures
+Blocked,Tests unable to execute,Count Blocked,0 critical-path blockers
+Pass Rate,Share of executed cases that passed,Passed/Executed,>=95%
+Regression Pass Rate,Share of regression tests that passed,Regression Passed/Regression Executed,100%
+Critical Defects,Open blocker/critical defects,Count open severity P0/P1,0 before release
+Traceability Coverage,Requirements linked to tests,Linked Requirements/Total Requirements,100%
+Defect Retest Rate,Closed defects that were retested,Retested Closed Defects/Closed Defects,100%

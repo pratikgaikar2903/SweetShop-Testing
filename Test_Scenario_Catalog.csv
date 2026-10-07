@@ -1,0 +1,19 @@
+Scenario_ID,Area,Scenario,Positive,Negative,Boundary,Priority
+TS-001,Navigation,Application navigation and availability,Yes,Yes,Yes,P0
+TS-002,Catalogue,Product catalogue availability and display,Yes,Yes,Yes,P0
+TS-003,Product,Product details accuracy and navigation,Yes,Yes,Yes,P1
+TS-004,Search,Product search relevance and empty states,Yes,Yes,Yes,P1
+TS-005,Filter,Filtering and combined filters,Yes,Yes,Yes,P1
+TS-006,Registration,Account creation and validation,Yes,Yes,Yes,P0
+TS-007,Authentication,Login/logout and authentication errors,Yes,Yes,Yes,P0
+TS-008,Cart,Cart lifecycle and quantity operations,Yes,Yes,Yes,P0
+TS-009,Cart Boundary,Quantity edge cases and invalid values,Yes,Yes,Yes,P0
+TS-010,Cart Calculation,Subtotal and grand-total calculations,Yes,Yes,Yes,P0
+TS-011,Checkout,Checkout fields and validation,Yes,Yes,Yes,P0
+TS-012,Order,Order submission, confirmation and duplicate prevention,Yes,Yes,Yes,P0
+TS-013,Session,Session persistence expiry and logout,Yes,Yes,Yes,P1
+TS-014,Errors,Recoverable error handling and user feedback,Yes,Yes,Yes,P1
+TS-015,Responsive,Mobile and tablet usability,Yes,Yes,Yes,P1
+TS-016,Security,Input handling and safe error behaviour,Yes,Yes,Yes,P1
+TS-017,Regression,Critical business-flow regression coverage,Yes,Yes,Yes,P0
+TS-018,Accessibility,Keyboard and form accessibility basics,Yes,Yes,Yes,P2

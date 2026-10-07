@@ -1,0 +1,19 @@
+Requirement_ID,Requirement,Scenario_ID,Test_Case_ID,Coverage_Type,Priority
+REQ-001,Application navigation,TS-001,TC-001,Functional,P0
+REQ-002,Product catalogue,TS-002,TC-002,Functional,P0
+REQ-003,Product details,TS-003,TC-003,Functional,P1
+REQ-004,Search,TS-004,TC-004,Functional,P1
+REQ-005,Filtering,TS-005,TC-005,Functional,P1
+REQ-006,Registration,TS-006,TC-006,Functional,P0
+REQ-007,Login,TS-007,TC-007,Negative,P0
+REQ-008,Cart operations,TS-008,TC-008,Functional,P0
+REQ-009,Quantity boundaries,TS-009,TC-009,Boundary,P0
+REQ-010,Price calculations,TS-010,TC-010,Calculation,P0
+REQ-011,Checkout validation,TS-011,TC-011,Negative,P0
+REQ-012,Order placement,TS-012,TC-012,End-to-End,P0
+REQ-013,Session behaviour,TS-013,TC-013,State,P1
+REQ-014,Error handling,TS-014,TC-014,Negative,P1
+REQ-015,Responsive usability,TS-015,TC-015,Usability,P2
+REQ-016,Security input validation,TS-016,TC-016,Security,P1
+REQ-017,Regression critical path,TS-017,TC-017,Regression,P0
+REQ-018,Accessibility basics,TS-018,TC-018,Accessibility,P2
